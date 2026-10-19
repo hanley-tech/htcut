@@ -2,8 +2,9 @@
 
 # HTCUT
 
-**The video editor your AI can drive.** You edit in the app. Claude Code edits the same project from the terminal, at
-the same time. Every change is an undoable step in one shared history, so neither of you overwrites the other.
+**Vibe editing for real creators. You set the vibe — Claude makes the edits.** HTCUT is a real video editor: you edit
+in the app while Claude Code edits the same project from the terminal, live. Every change is an undoable step in one
+shared history, so neither of you overwrites the other.
 
 Free for Apple Silicon Macs (macOS 15 or later). No account.
 
