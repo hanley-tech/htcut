@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and show & tell
+    url: https://github.com/hanley-tech/htcut/discussions
+    about: How do I…? What did you make? Ask and share in Discussions.
+  - name: Download HTCUT
+    url: https://htcut.hanley.world
+    about: The latest notarized build for Apple Silicon Macs.

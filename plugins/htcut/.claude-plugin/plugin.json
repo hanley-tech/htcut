@@ -1,0 +1,8 @@
+{
+  "name": "htcut",
+  "description": "Edit videos with HTCUT from Claude Code: the htcut CLI drives the same project you have open in the app.",
+  "version": "0.1.0",
+  "author": { "name": "Hanley Leung", "url": "https://hanley.world" },
+  "homepage": "https://htcut.hanley.world",
+  "keywords": ["video", "video-editing", "youtube", "shorts", "captions", "motion-graphics"]
+}

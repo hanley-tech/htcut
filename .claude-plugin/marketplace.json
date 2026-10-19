@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "htcut",
+  "description": "HTCUT — the Mac video editor your AI can drive. You edit in the app, Claude edits the same project from the terminal.",
+  "owner": {
+    "name": "hanley-tech",
+    "url": "https://github.com/hanley-tech"
+  },
+  "plugins": [
+    {
+      "name": "htcut",
+      "description": "Teaches Claude Code to edit videos with HTCUT's `htcut` CLI while you work in the app: cuts, Shorts, captions, motion graphics, music, cleanup, checks and export — every change an undoable op in the shared timeline.",
+      "source": "./plugins/htcut",
+      "category": "productivity",
+      "homepage": "https://htcut.hanley.world",
+      "tags": [
+        "video",
+        "video-editing",
+        "youtube",
+        "shorts",
+        "captions",
+        "motion-graphics",
+        "mac"
+      ],
+      "repository": "https://github.com/hanley-tech/htcut"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in HTCUT (the app or the htcut CLI) doesn't work as it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Screenshots or a screen recording help a lot.
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open a project with…\n2. …"
+  - type: input
+    id: version
+    attributes:
+      label: HTCUT version
+      description: HTCUT ▸ About HTCUT, or run `htcut --version`.
+      placeholder: "0.1.0 (46)"
+    validations: { required: true }
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac
+      placeholder: "macOS 26.1, MacBook Pro M3"
+    validations: { required: true }
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options: [The app, The htcut CLI, Claude Code using HTCUT, Export / rendering, Not sure]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages or output
+      description: Paste any error text or CLI output. Leave out anything private.
+      render: text

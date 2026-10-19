@@ -1,0 +1,19 @@
+name: Feature request
+description: Something HTCUT should do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The video or edit you're working on and where HTCUT gets in the way. The problem matters more than the solution.
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: Another editor, a workaround, by hand…
