@@ -8,7 +8,7 @@ shared history, so neither of you overwrites the other.
 
 Free for Apple Silicon Macs (macOS 15 or later). No account.
 
-**[Download HTCUT](https://github.com/hanley-tech/htcut/releases/latest/download/HTCUT.dmg)** ·
+**[Download HTCUT](https://htcut.hanley.world/download)** ·
 [Website & tutorials](https://htcut.hanley.world) · [Report a bug](https://github.com/hanley-tech/htcut/issues/new/choose) ·
 [Discussions](https://github.com/hanley-tech/htcut/discussions)
 
@@ -16,8 +16,8 @@ Free for Apple Silicon Macs (macOS 15 or later). No account.
 
 ## What this repo is
 
-The public home of HTCUT: releases, bug reports, feature requests, discussions and the Claude Code plugin. HTCUT
-itself is closed source; its code isn't here.
+The public home of HTCUT: release notes, bug reports, feature requests, discussions and the Claude Code plugin.
+Downloads are on [htcut.hanley.world](https://htcut.hanley.world/download). HTCUT itself is closed source; its code isn't here.
 
 ## Use it with Claude Code
 
