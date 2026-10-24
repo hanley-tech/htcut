@@ -52,6 +52,9 @@ Overlays are HTML templates in the project's `graphics/` folder with typed field
 data-composition-variables='[…]'>`; set them per clip with `setClip … {"title":{"vars":{…}}}`. Animated templates put
 `data-animated` on `<html>` and expose `window.htcut.seek(t)` (GSAP is bundled offline in `graphics/vendor/`).
 Iterate with `htcut graphic <template> --at 1,2.5 --vars '{…}'` (stills + a cut-off-text check) before placing.
+Make soft glows and blurred shapes with gradients (`radial-gradient(closest-side, …, transparent)`), never a large CSS
+`filter: blur()` — those make 4K renders fail. Fit any giant word or number to ≤ 90% of the frame width in the page's
+own script (measure it and scale the font down): text running off the frame edge isn't caught by the cut-off check.
 
 ## Verify, then ship
 
@@ -60,9 +63,21 @@ htcut check                      # overlaps, gaps, missing media, clipped words 
 htcut frame 4.2s -o /tmp/f.png   # one composited frame — look at it
 htcut sheet -o /tmp/sheet.png    # contact sheet of the whole timeline — look at it
 htcut preflight                  # loudness, safe-area text, cut-off text, silences, chapters
+htcut polish [--video review.mp4] # clean-up sweep: cut-out over nothing, broken cut-out frames, looking away at clip edges,
+                                 # hidden clips; --video = flash frames in a render (export / review make run it too)
 htcut jobs --wait                # let background renders finish
 htcut export -o out.mp4          # prints a loudness / true-peak check
 ```
 
+For YouTube: `htcut master --limit -1.5` (AAC encoding pushes a −1 dBTP limit back over it) and set the master gain
+from a review copy's loudness first, so the full-size export only runs once. Times in `--from/--to/--at` take units
+(`206s`); a bare number is frames.
+
 Look at frames before calling anything done (start, middle, end). Run `htcut check` before handing the user a cut
 to watch. Renders and recipes fail loudly instead of guessing — read the error, fix the cause.
+
+## When the video is finished
+
+Suggest **File ▸ Project Done…** (or `htcut retro`): it reads what HTCUT recorded and this project's Claude Code
+sessions and lists fixes for HTCUT, this skill and the user's own setup. It runs on the user's Claude (about a minute,
+some usage) and sends nothing unless the user reviews the suggestions and presses Send — let them decide.
